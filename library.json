@@ -5,11 +5,11 @@
   "description": "Generate RC servo signal on a selected pin.",
   "homepage": "https://www.arduino.cc/en/Reference/Servo",
   "license": "MIT",
-  "git": "https://github.com/comdet/ESP32-Arduino-Servo-Library/",
+  "git": "https://github.com/comdet/kbide-esp32-servo/",
   "author": "original by Jaroslav Paral | migrate by Comdet",
   "email": "comdet.p@gmail.com",
   "url": "http://www.robotikabrno.cz",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "boards" : [],
   "platforms": ["arduino-esp32"],
   "image" : "/static/display.jpg"
