@@ -9,8 +9,8 @@
   "author": "original by Jaroslav Paral | migrate by Comdet",
   "email": "comdet.p@gmail.com",
   "url": "http://www.robotikabrno.cz",
-  "version": "1.0.4",
-  "boards" : "",
-  "platforms": "arduino-esp32",
+  "version": "1.0.5",
+  "board" : "",
+  "platform": "arduino-esp32",
   "image" : "/static/display.jpg"
 }
