@@ -11,6 +11,6 @@
   "url": "http://www.robotikabrno.cz",
   "version": "1.0.6",
   "board" : "",
-  "platform": "arduino-esp32",
+  "platform": ["arduino-esp32"],
   "image" : "/static/display.jpg"
 }
