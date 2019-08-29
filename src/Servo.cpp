@@ -32,7 +32,7 @@
 
 #include <Servo.h>
 
-int Servo::channel_next_free = 0;
+int Servo::channel_next_free = 2; //start with 1
 
 Servo::Servo() {
     _resetFields();
@@ -49,6 +49,13 @@ bool Servo::attach(int pin, int channel,
     if(channel == CHANNEL_NOT_ATTACHED) {
         if(channel_next_free == CHANNEL_MAX_NUM) {
             return false;
+        }
+        while(ledcRead(channel_next_free)) {
+            log_e("Tone channel %d is already in use", ledcRead(channel_next_free));
+            channel_next_free++;
+            if(channel_next_free == CHANNEL_MAX_NUM){
+                return;
+            }
         }
         _channel = channel_next_free;
         channel_next_free++;
